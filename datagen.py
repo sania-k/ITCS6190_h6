@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 # Generate listening_logs.csv
 random.seed(42)
 num_users = 100
-num_songs = 50
+num_songs = 100
 num_logs = 1000
 
 user_ids = [f'user_{i}' for i in range(1, num_users+1)]
