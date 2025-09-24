@@ -26,7 +26,7 @@ for _ in range(num_logs):
     ])
 
 pd.DataFrame(logs, columns=['user_id','song_id','timestamp','duration_sec'])\
-  .to_csv('listening_logs.csv', index=False)
+  .to_csv('input/listening_logs.csv', index=False)
 
 # Generate songs_metadata.csv
 genres = ['Pop', 'Rock', 'Jazz', 'Classical', 'Hip-Hop']
@@ -43,4 +43,4 @@ for song_id in song_ids:
     ])
 
 pd.DataFrame(metadata, columns=['song_id','title','artist','genre','mood'])\
-  .to_csv('songs_metadata.csv', index=False)
+  .to_csv('input/songs_metadata.csv', index=False)
